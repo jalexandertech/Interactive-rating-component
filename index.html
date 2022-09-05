@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Rating Component</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card text-center">
+        <div class="card-body" id="card-body">
+          <div class="thank-you-card">
+            <img src="./images/illustration-thank-you.svg" alt="Thank you image" />
+            <div class="selected-text text-center">
+             You've selected <span id="selected-rating"></span> out of 5
+            </div>
+            <div class="thank-you-text">Thank you!</div>
+            <p class="content">
+              We appreciate you taking the time to give a rating. If you ever need
+              more support, don’t hesitate to get in touch!
+            </p>
+          </div>
+          <div class="submit-rating">
+          <span class="star"
+            ><img src="./images/icon-star.svg" alt="Star icon"
+          /></span>
+          <h1>How did we do?</h1>
+          <p>
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+          <div class="custom-rb">
+            <div class="rb-1 radioBtn" id="radioBtn">
+              <input
+                type="radio"
+                name="rating"
+                id="radioBtn-1"
+                value="1"
+              />
+              <label for="radioBtn-1">
+                <span class="rating">1</span>
+              </label>
+            </div>
+            <div class="rb-2 radioBtn">
+              <input
+                type="radio"
+                name="rating"
+                id="radioBtn-2"
+                value="2"
+              />
+              <label for="radioBtn-2">
+                <span class="rating">2</span>
+              </label>
+            </div>
+            <div class="rb-3 radioBtn">
+              <input
+                type="radio"
+                name="rating"
+                id="radioBtn-3"
+                value="3"
+              />
+              <label for="radioBtn-3">
+                <span class="rating">3</span>
+              </label>
+            </div>
+            <div class="rb-4 radioBtn">
+              <input
+                type="radio"
+                name="rating"
+                id="radioBtn-4"
+                value="4"
+              />
+              <label for="radioBtn-4">
+                <span class="rating">4</span>
+              </label>
+            </div>
+            <div class="rb-5 radioBtn">
+              <input
+                type="radio"
+                name="rating"
+                id="radioBtn-5"
+                value="5"
+              />
+              <label for="radioBtn-5">
+                <span class="rating">5</span>
+              </label>
+            </div>
+          </div>
+          <button type="button" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

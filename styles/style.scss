@@ -1,0 +1,133 @@
+$primaryBtn: hsl(25, 97%, 53%);
+$backgroundColor:hsl(216, 12%, 8%);
+$cardBackgroundColor:hsl(213, 19%, 18%);
+$h1Color:hsl(0, 0%, 100%);
+$pColor: hsl(217, 12%, 63%);
+$radioBtnColor: hsl(213, 19%, 18%);
+$radioBtnTextColor:hsl(216, 12%, 54%);
+$card-border-radius: 40%;
+$boxShadow: 4px 6px 6px;
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: $backgroundColor;
+}
+.container {
+    max-width: 500px;
+    margin: 10% auto;
+    height: 100%;
+    .card {
+        width: 412px;
+        height: 416px;
+        border-style: none;
+        border-radius: 2em;
+        background-color: $cardBackgroundColor;
+        padding: 5px;
+
+        }
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .thank-you-card{
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            img {
+                max-width: 60%;
+                margin-top: 10px;
+            }
+            .selected-text {
+                color: $primaryBtn;
+                background: $backgroundColor;
+                border: 1px solid $backgroundColor;
+                border-radius: 25px;
+                padding: 5px;
+                height: 32px;
+                font-size: 14px;
+                margin-top: 15px;
+            }
+            .thank-you-text {
+                font-size: 25px;
+                font-weight: 500;
+                color: $h1Color;
+                padding: 15px;
+            }
+            .content {
+                color: $pColor;
+                padding: 15px;
+            }
+        }
+        .submit-rating {
+        .star {
+            border-radius: 50%;
+            width: 35px;
+            padding: 0px 5px 5px;
+            border: 1px solid $cardBackgroundColor;
+            border-style: none;
+            box-shadow: $boxShadow;
+            align-content: flex-start;
+            img {
+                max-width: 100%;
+            }
+        }
+        h1 {
+            color: $h1Color;
+            padding: 10px;
+        }
+        p {
+            color: $pColor;
+            padding: 10px;
+        }
+        .custom-rb {
+            display: flex;
+            justify-content: space-evenly;
+            height: 65px;
+            .radioBtn {
+                display: inline-block;
+            } 
+            input[type="radio"] {
+                display: none;
+                + label{
+                    font-size: 14px;
+                    color: $radioBtnTextColor;
+                    
+                    .rating {
+                        border-radius: 50%;
+                        border: 1px solid #fff;
+                        cursor: pointer;
+                        width: 40px;
+                        padding:10px 20px 15px;
+                        height: 45px;
+                        &:hover {
+                            background-color: #fff;
+                        }
+                    }
+                }
+                &:checked + label .rating {
+                    background: $primaryBtn;
+                    color: #fff;
+                  }
+            }
+                        
+        }
+        .btn {
+            background-color: $primaryBtn;
+            border-style: none;
+            width: 341px;
+            height: 45px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            &:hover {
+                background-color: #fff;
+                color: $primaryBtn;
+            }
+        }
+    }
+}
+}

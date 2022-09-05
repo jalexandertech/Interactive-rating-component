@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: hsl(216deg, 12%, 8%);
+}
+
+.container {
+  max-width: 500px;
+  margin: 10% auto;
+  height: 100%;
+}
+.container .card {
+  width: 412px;
+  height: 416px;
+  border-style: none;
+  border-radius: 2em;
+  background-color: hsl(213deg, 19%, 18%);
+  padding: 5px;
+}
+.container .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container .card-body .thank-you-card {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+.container .card-body .thank-you-card img {
+  max-width: 60%;
+  margin-top: 10px;
+}
+.container .card-body .thank-you-card .selected-text {
+  color: hsl(25deg, 97%, 53%);
+  background: hsl(216deg, 12%, 8%);
+  border: 1px solid hsl(216deg, 12%, 8%);
+  border-radius: 25px;
+  padding: 5px;
+  height: 32px;
+  font-size: 14px;
+  margin-top: 15px;
+}
+.container .card-body .thank-you-card .thank-you-text {
+  font-size: 25px;
+  font-weight: 500;
+  color: hsl(0deg, 0%, 100%);
+  padding: 15px;
+}
+.container .card-body .thank-you-card .content {
+  color: hsl(217deg, 12%, 63%);
+  padding: 15px;
+}
+.container .card-body .submit-rating .star {
+  border-radius: 50%;
+  width: 35px;
+  padding: 0px 5px 5px;
+  border: 1px solid hsl(213deg, 19%, 18%);
+  border-style: none;
+  box-shadow: 4px 6px 6px;
+  align-content: flex-start;
+}
+.container .card-body .submit-rating .star img {
+  max-width: 100%;
+}
+.container .card-body .submit-rating h1 {
+  color: hsl(0deg, 0%, 100%);
+  padding: 10px;
+}
+.container .card-body .submit-rating p {
+  color: hsl(217deg, 12%, 63%);
+  padding: 10px;
+}
+.container .card-body .submit-rating .custom-rb {
+  display: flex;
+  justify-content: space-evenly;
+  height: 65px;
+}
+.container .card-body .submit-rating .custom-rb .radioBtn {
+  display: inline-block;
+}
+.container .card-body .submit-rating .custom-rb input[type=radio] {
+  display: none;
+}
+.container .card-body .submit-rating .custom-rb input[type=radio] + label {
+  font-size: 14px;
+  color: hsl(216deg, 12%, 54%);
+}
+.container .card-body .submit-rating .custom-rb input[type=radio] + label .rating {
+  border-radius: 50%;
+  border: 1px solid #fff;
+  cursor: pointer;
+  width: 40px;
+  padding: 10px 20px 15px;
+  height: 45px;
+}
+.container .card-body .submit-rating .custom-rb input[type=radio] + label .rating:hover {
+  background-color: #fff;
+}
+.container .card-body .submit-rating .custom-rb input[type=radio]:checked + label .rating {
+  background: hsl(25deg, 97%, 53%);
+  color: #fff;
+}
+.container .card-body .submit-rating .btn {
+  background-color: hsl(25deg, 97%, 53%);
+  border-style: none;
+  width: 341px;
+  height: 45px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.container .card-body .submit-rating .btn:hover {
+  background-color: #fff;
+  color: hsl(25deg, 97%, 53%);
+}/*# sourceMappingURL=style.css.map */
